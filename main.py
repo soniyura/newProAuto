@@ -1,6 +1,6 @@
 # https://hub.docker.com/r/selenium/standalone-chrome
 # docker run -d -p 4444:4444 -p 7900:7900 --shm-size="2g" selenium/standalone-chrome:latest
-# http://localhost:7900/?autoconnect=1&resize=scale&password=secret .
+# http://localhost:7900/?autoconnect=1&resize=scale&password=secret
 
 import requests
 from selenium import webdriver
