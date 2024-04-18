@@ -1,24 +1,28 @@
 from pytest_bdd import scenario, given, when, then
 import json
+
+
 @scenario("example.feature", "Login page")
 def test_scenario():
     pass
 
 @given(u'User')
 def test_step_impl():
+    pass
     with open("resources/variables.json", "r") as f:
         data = json.load(f)
         user_name = "admin"
         user_password = data["users"][user_name]
 
 
+
     #raise NotImplementedError(u'STEP: Given User')
 
-#
-# @given(u'URL to Navigate')
-# def step_impl():
-#     pass
-#     #raise NotImplementedError(u'STEP: Given URL to Navigate')
+
+@given(u'URL to Navigate')
+def step_impl():
+    pass
+    #raise NotImplementedError(u'STEP: Given URL to Navigate')
 #
 #
 # @when(u'I open URL')
